@@ -10,9 +10,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { Items } from '../mocks/providers/items';
-import { Stocks } from '../mocks/providers/stocks';
+import { StocksService } from '../providers/stocks/stocks.service';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
+
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -50,7 +54,9 @@ export function provideSettings(storage: Storage) {
       }
     }),
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -59,7 +65,7 @@ export function provideSettings(storage: Storage) {
   providers: [
     Api,
     Items,
-    Stocks,
+    StocksService,
     User,
     Camera,
     SplashScreen,
