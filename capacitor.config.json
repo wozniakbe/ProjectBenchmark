@@ -1,0 +1,6 @@
+{
+  "appId": "com.posof.benchmark",
+  "appName": "ProjectBenchmark",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
