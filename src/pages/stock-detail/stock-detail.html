@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ stock.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + stock.profilePic + ')'">
+  </div>
+
+  <div class="item-detail" padding>
+    <h2>{{stock.name}}</h2>
+    <p>{{stock.price}}</p>
+  </div>
+</ion-content>
