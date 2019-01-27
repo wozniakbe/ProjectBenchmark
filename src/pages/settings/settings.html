@@ -17,7 +17,11 @@
 
       <ion-item>
         <ion-label>{{ 'SETTINGS_OPTION2' | translate }}</ion-label>
-        <ion-input formControlName="option2"></ion-input>
+        <ion-select formControlName="option2">
+          <ion-option value="Good Time" checked="true">Good Time</ion-option>
+          <ion-option value="Long Time">Long Time</ion-option>
+          <ion-option value="I'm just here for football">I'm just here for football</ion-option>
+        </ion-select>
       </ion-item>
 
       <ion-item>
