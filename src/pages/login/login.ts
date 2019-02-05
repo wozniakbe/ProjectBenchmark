@@ -4,6 +4,8 @@ import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers';
 import { MainPage } from '../';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebase/app';
 
 @IonicPage()
 @Component({
@@ -25,7 +27,8 @@ export class LoginPage {
   constructor(public navCtrl: NavController,
     public user: User,
     public toastCtrl: ToastController,
-    public translateService: TranslateService) {
+    public translateService: TranslateService,
+    public afAuth: AngularFireAuth) {
 
     this.translateService.get('LOGIN_ERROR').subscribe((value) => {
       this.loginErrorString = value;
@@ -34,17 +37,31 @@ export class LoginPage {
 
   // Attempt to login in through our User service
   doLogin() {
-    this.user.login(this.account).subscribe((resp) => {
-      this.navCtrl.push(MainPage);
-    }, (err) => {
-      this.navCtrl.push(MainPage);
-      // Unable to log in
-      let toast = this.toastCtrl.create({
-        message: this.loginErrorString,
-        duration: 3000,
-        position: 'top'
+    // this.user.login(this.account).subscribe((resp) => {
+    //   this.navCtrl.push(MainPage);
+    // }, (err) => {
+    //   this.navCtrl.push(MainPage);
+    //   // Unable to log in
+    //   let toast = this.toastCtrl.create({
+    //     message: this.loginErrorString,
+    //     duration: 3000,
+    //     position: 'top'
+    //   });
+    //   toast.present();
+    // });
+    // this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider()).then((credential) => {
+    //   //credential.user.
+    //   this.navCtrl.push(MainPage);
+    // }).catch((e) =>{
+    //   console.log("shit");
+    //   console.log(e);
+    // });
+    this.afAuth.auth.signInWithEmailAndPassword(this.account.email, this.account.password).then((credential) => {
+        //credential.user.
+        this.navCtrl.push(MainPage);
+      }).catch((e) =>{
+        console.log("shit");
+        console.log(e);
       });
-      toast.present();
-    });
   }
 }
