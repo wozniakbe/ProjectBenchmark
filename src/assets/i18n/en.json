@@ -8,7 +8,7 @@
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
 
-  "TAB1_TITLE": "Items",
+  "TAB1_TITLE": "Stocks",
   "TAB2_TITLE": "Search",
   "TAB3_TITLE": "Settings",
 
@@ -31,10 +31,10 @@
   "WELCOME_INTRO": "The starting point for your ascension to virtual football stock glory.",
 
   "SETTINGS_TITLE": "Settings",
-  "SETTINGS_OPTION1": "Option 1",
-  "SETTINGS_OPTION2": "Option 2",
-  "SETTINGS_OPTION3": "Option 3",
-  "SETTINGS_OPTION4": "Option 4",
+  "SETTINGS_OPTION1": "Big toggle guy?",
+  "SETTINGS_OPTION2": "I'm here for a",
+  "SETTINGS_OPTION3": "1, 2, maybe 3?",
+  "SETTINGS_OPTION4": "Display Name",
 
   "SETTINGS_PROFILE_BUTTON": "Edit Profile",
 
@@ -49,7 +49,7 @@
   "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
   "SIGNUP_BUTTON": "Sign up",
 
-  "LIST_MASTER_TITLE": "Items",
+  "LIST_MASTER_TITLE": "Stocks",
 
   "ITEM_CREATE_TITLE": "New Item",
   "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",

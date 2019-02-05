@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, ModalController, NavController } from 'ionic-angular';
 
-import { Stocks } from '../../providers';
+import { StocksService } from '../../providers';
 import { Stock } from '../../models/stock';
 
 @IonicPage()
@@ -12,8 +12,10 @@ import { Stock } from '../../models/stock';
 export class ListMasterPage {
   currentStocks: Stock[];
 
-  constructor(public navCtrl: NavController, public stocks: Stocks, public modalCtrl: ModalController) {
-    this.currentStocks = this.stocks.query();
+  constructor(public navCtrl: NavController, public stocksService: StocksService, public modalCtrl: ModalController) {
+    this.stocksService.getStocks().subscribe(res => {
+      this.currentStocks = res;
+    });
   }
 
   /**
@@ -31,7 +33,7 @@ export class ListMasterPage {
     let addModal = this.modalCtrl.create('ItemCreatePage');
     addModal.onDidDismiss(stock => {
       if (stock) {
-        this.stocks.add(stock);
+        //this.stocks.add(stock);
       }
     })
     addModal.present();

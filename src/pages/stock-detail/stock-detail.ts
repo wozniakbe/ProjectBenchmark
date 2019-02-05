@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Stocks } from '../../providers';
+import { StocksService } from '../../providers';
 
 
 
@@ -12,8 +12,8 @@ import { Stocks } from '../../providers';
 export class StockDetailPage {
   stock: any;
 
-  constructor(public navCtrl: NavController, navParams: NavParams, stocks: Stocks) {
-    this.stock = navParams.get('stock') || stocks.defaultStock;
+  constructor(public navCtrl: NavController, navParams: NavParams, stocksService: StocksService) {
+    this.stock = navParams.get('stock');
   }
 
 }
