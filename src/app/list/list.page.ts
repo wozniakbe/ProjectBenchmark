@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Team } from '../models/team';
+import { TeamService } from '../providers/';
+
 @Component({
   selector: 'app-list',
   templateUrl: 'list.page.html',
@@ -19,19 +22,17 @@ export class ListPage implements OnInit {
     'bluetooth',
     'build'
   ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
+  teams: Team[];
+  constructor(private teamService: TeamService) {
+
   }
 
   ngOnInit() {
+    this.teamService.getTeams().subscribe(response => {
+      this.teams = response;
+    });
   }
+
   // add back when alpha.4 is out
   // navigate(item) {
   //   this.router.navigate(['/list', JSON.stringify(item)]);
