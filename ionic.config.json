@@ -1,0 +1,7 @@
+{
+  "name": "TestSuper",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

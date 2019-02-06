@@ -1,0 +1,68 @@
+{
+  "BACK_BUTTON_TEXT": "Back",
+
+  "NAME": "Name",
+  "EMAIL": "Email",
+  "USERNAME": "Username",
+  "PASSWORD": "Password",
+  "LOGIN": "Sign in",
+  "SIGNUP": "Sign up",
+
+  "TAB1_TITLE": "Stocks",
+  "TAB2_TITLE": "Search",
+  "TAB3_TITLE": "Settings",
+
+  "MAP_TITLE": "Map",
+
+  "TUTORIAL_SKIP_BUTTON": "Skip",
+  "TUTORIAL_CONTINUE_BUTTON": "Continue",
+
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to Project Benchmark",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Project Benchmark</b> is a badass fantasy game that lets you think you know shit about football.",
+
+  "TUTORIAL_SLIDE2_TITLE": "How to play Project Benchmark",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Buy stocks. Sell stocks. Start up, cash in, sell out, bro down.",
+
+  "TUTORIAL_SLIDE3_TITLE": "Does this app currently work?",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "No.",
+
+  "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
+
+  "WELCOME_INTRO": "The starting point for your ascension to virtual football stock glory.",
+
+  "SETTINGS_TITLE": "Settings",
+  "SETTINGS_OPTION1": "Big toggle guy?",
+  "SETTINGS_OPTION2": "I'm here for a",
+  "SETTINGS_OPTION3": "1, 2, maybe 3?",
+  "SETTINGS_OPTION4": "Display Name",
+
+  "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+
+  "SETTINGS_PAGE_PROFILE": "Edit Profile",
+
+  "WELCOME_TITLE": "Welcome",
+
+  "LOGIN_TITLE": "Sign in",
+  "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
+  "LOGIN_BUTTON": "Sign in",
+  "SIGNUP_TITLE": "Sign up",
+  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_BUTTON": "Sign up",
+
+  "LIST_MASTER_TITLE": "Stocks",
+
+  "ITEM_CREATE_TITLE": "New Item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
+
+  "ITEM_NAME_PLACEHOLDER": "Name",
+  "ITEM_ABOUT_PLACEHOLDER": "About",
+
+  "DONE_BUTTON": "Done",
+  "CANCEL_BUTTON": "Cancel",
+  "DELETE_BUTTON": "Delete",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Search",
+  "SEARCH_PLACEHOLDER": "Search the stock list, e.g. \"Chicago Bears\""
+}
