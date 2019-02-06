@@ -1,7 +1,5 @@
 {
-  "name": "TestSuper",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
+  "name": "bench",
+  "integrations": {},
+  "type": "angular"
 }
